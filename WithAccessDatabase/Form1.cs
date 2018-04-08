@@ -32,7 +32,7 @@ namespace WithAccessDatabase
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
+        { 
             OleDbConnection conn = new OleDbConnection(Configuration.ConfigurationMethod());
             OleDbCommand cmd = new OleDbCommand(@"Update EMPTBL SET FNAME=' " + fatherNametextBox2.Text.Trim() + "' where NAME = '" + nametextBox1.Text.Trim() + "'", conn);
 
